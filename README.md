@@ -2,10 +2,10 @@
 LM Studio'yu işletim sistemine uygun olarak indirin ve kurun:
 [Download LM Studio - Mac, Linux, Windows](https://lmstudio.ai/download)
 
-![[Pasted image 20260216121907.png]]
+![Pasted image 20260216121907.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%2020260216121907.png)
 
 Kurulum sonrası donanım hızlandırma (GPU Offload) ayarları için sağ alt köşedeki ayarlar ikonuna gidin.
-![[Pasted image 20260216122034.png]]
+![Pasted image 20260216122034.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216122034.png)
 
 ### Mac (Apple Silicon / M Serisi)
 Ekstra bir ayara gerek yok. Metal otomatik olarak devreye girer. (M5 Serisinde destek eklenmemiş olabilir.)
@@ -15,44 +15,44 @@ Ekstra bir ayara gerek yok. Metal otomatik olarak devreye girer. (M5 Serisinde d
 * **Sadece CPU:** "CPU llama.cpp" veya "Vulkan llama.cpp" seçin.
 * **NVIDIA GPU:** Ekran kartını tam performans kullanmak için mutlaka **CUDA** versiyonlarını seçin.
 
-![[Pasted image 20260216122110.png]]
+![Pasted image 20260216122110.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216122110.png)
 
 GPU kullanımı için "GGUF" ayarlarından indirdiğiniz CUDA sürümünün seçili olduğundan emin olun.
-![[Pasted image 20260216123035.png]]
+![Pasted image 20260216123035.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216123035.png)
 
 ## 2. Model İndirme
 Sol menüdeki "Search" ikonundan model arayın.
-![[Pasted image 20260216123217.png]]
+![Pasted image 20260216123217.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216123217.png)
 
 **Quantization Seçimi:**
 * Genellikle önerilen modeller **Q4_K_M** veya **Q5_K_M** quantizeli versiyonlar olur. Bu modeller hız/kalite dengesi için ideal olmasına rağmen modelin tam kalitesini veremez.
 * Maksimum doğruluk için **fp16** veya **bf16** tercih edilir (VRAM kullanımı artar, hız düşer).
-![[Pasted image 20260216125146.png]]
-![[Pasted image 20260216125215.png]]
+![Pasted image 20260216125146.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216125146.png)
+![Pasted image 20260216125215.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216125215.png)
 
 ### Model ID Yönetimi
 
 Yüklü modelleri görüntülemek ve yönetmek için sol menüdeki **My Models** (Klasör ikonu) sekmesine gidin.
-![[Pasted image 20260216131436.png]]
+![Pasted image 20260216131436.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216131436.png)
 
 API entegrasyonunda kullanılacak kimliği (ID) almak için:
 İlgili modelin **Action** menüsü altından **Copy Default Identifier** seçeneğine tıklayın.
-![[Pasted image 20260216131536.png]]
+![Pasted image 20260216131536.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216131536.png)
 
 ## 3. Local Server Başlatma
 Sunucuyu başlatmak ve API olarak kullanmak için sol menüden **Developer** sekmesine gidin.
 
-![[Pasted image 20260216125436.png]]
+![Pasted image 20260216125436.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216125436.png)
 
 **Kritik Ayarlar:**
 "Start Server" yaptıktan önce veya sonra **Server Settings** altında şunları aktif edin:
 1.  **CORS:** Cross-Origin hatalarını önlemek için.
 2.  **Local Network:** Ağdaki veya lokaldeki diğer servislerin erişebilmesi için.
 
-![[Pasted image 20260216125658.png]]
+![Pasted image 20260216125658.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216125658.png)
 
 API uyumluluğu için "Supported Endpoints" kısmında **OpenAI-Compatible** seçili olmalı.
-![[Pasted image 20260216125751.png]]
+![Pasted image 20260216125751.png](https://github.com/aefecoban/lms/blob/main/Pasted%20image%20260216125751.png)
 
 ## 4. API Kullanımı (Python)
 
