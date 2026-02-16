@@ -13,11 +13,14 @@ Ekstra bir ayara gerek yok. Metal otomatik olarak devreye girer. (M5 Serisinde d
 "Runtime" sekmesi altından uygun backend'i seçmelisiniz:
 * **Sadece CPU:** "CPU llama.cpp" veya "Vulkan llama.cpp" seçin.
 * **NVIDIA GPU:** Ekran kartını tam performans kullanmak için mutlaka **CUDA** versiyonlarını seçin.
+* **NVIDIA Ekran Kartı Varsa:** Mutlaka **CUDA** sürümü seçilmeli. Bu sayede işlemlerin işlemci yerine ekran kartında yapılır.
 
 <img width="947" height="737" alt="image" src="https://github.com/user-attachments/assets/0eee32a5-7c51-4448-be32-8f1922e75755" />
 
 GPU kullanımı için "GGUF" ayarlarından indirdiğiniz CUDA sürümünün seçili olduğundan emin olun.
 <img width="938" height="733" alt="image" src="https://github.com/user-attachments/assets/6301b886-1626-4566-9686-c70f1879ed3f" />
+
+---
 
 ## 2. Model İndirme
 Sol menüdeki "Search" ikonundan model arayın.
@@ -30,13 +33,14 @@ Sol menüdeki "Search" ikonundan model arayın.
 <img width="846" height="589" alt="image" src="https://github.com/user-attachments/assets/fa9ab9ac-8bad-4c8e-897e-cdebebb8f1ab" />
 
 ### Model ID Yönetimi
-
 Yüklü modelleri görüntülemek ve yönetmek için sol menüdeki **My Models** (Klasör ikonu) sekmesine gidin.
 <img width="297" height="275" alt="image" src="https://github.com/user-attachments/assets/2c689238-c4e7-4736-ac32-249791bb4904" />
 
 API entegrasyonunda kullanılacak kimliği (ID) almak için:
 İlgili modelin **Action** menüsü altından **Copy Default Identifier** seçeneğine tıklayın.
 <img width="1329" height="388" alt="image" src="https://github.com/user-attachments/assets/95ddc286-22ac-4bb0-8844-97e93365642d" />
+
+---
 
 ## 3. Local Server Başlatma
 Sunucuyu başlatmak ve API olarak kullanmak için sol menüden **Developer** sekmesine gidin.
@@ -52,6 +56,8 @@ Sunucuyu başlatmak ve API olarak kullanmak için sol menüden **Developer** sek
 
 API uyumluluğu için "Supported Endpoints" kısmında **OpenAI-Compatible** seçili olmalı.
 <img width="457" height="280" alt="image" src="https://github.com/user-attachments/assets/3ba26a23-ffc7-4261-8d62-89a2b29ae8b5" />
+
+---
 
 ## 4. API Kullanımı (Python)
 
